@@ -1,0 +1,95 @@
+<!--NAME: RAZIEQ ISKANDAR BIN RUHISYAM
+REGISTRATION NUMBER: 25DIT24F1121
+CLASS: DIT 3A
+ASSESSMENT: PRACTICAL WORK 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item Booking - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ItemBooking</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="item.html">Item</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1>Welcome to Item Booking System</h1>
+        <p>Book and manage your equipment easily and quickly !</p>
+
+        <form id="loginForm" class="p-4 border rounded bg-light shadow-sm">
+          <h4 class="mb-3">Login</h4>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required placeholder="password">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div id="itemCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="images/router.jpg" class="d-block w-100" alt="Router">
+            </div>
+            <div class="carousel-item">
+              <img src="images/switch.jpg" class="d-block w-100" alt="Switch">
+            </div>
+            <div class="carousel-item">
+              <img src="images/wireless-ap.jpg" class="d-block w-100" alt="Wireless AP">
+            </div>
+            <div class="carousel-item">
+              <img src="images/firewall.jpg" class="d-block w-100" alt="Firewall">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 ItemBooking. Your one-stop platform to book, track, and manage items efficiently.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Login successful ! You may proceed to Booking page !");
+    });
+  </script>
+</body>
+</html>
