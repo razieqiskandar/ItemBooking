@@ -9,18 +9,30 @@ h1, h2 {
 footer {
   background-color: #f8f9fa;
   color: #333;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 15px 0;
+  text-align: center;
 }
 
 .carousel img {
-  height: 300px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .carousel img {
-    height: 200px;
+    height: 250px;
   }
 }
+
+#item-table thead th {
+    background-color: #0d6efd;
+    color: white !important;
+    font-weight: bold;
+}
+
+.ui-footer h4 {
+    font-size: 0.8em;
+    margin: 0.5em 0;
+}
+
